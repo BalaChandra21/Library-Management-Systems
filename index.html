@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📚 Library Management System</h1>
+
+    <div class="form">
+        <input type="text" id="searchQuery" placeholder="Search books">
+        <button onclick="fetchBooks()">Load Books</button>
+    </div>
+
+    <p id="loading" class="loading">Loading books...</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Issue Date</th>
+                <th>Return Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="bookList"></tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
